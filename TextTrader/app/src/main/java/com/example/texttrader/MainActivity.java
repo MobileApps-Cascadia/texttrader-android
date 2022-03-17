@@ -3,7 +3,7 @@ package com.example.texttrader;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
+//test comment
 public class MainActivity extends AppCompatActivity {
 
     @Override
