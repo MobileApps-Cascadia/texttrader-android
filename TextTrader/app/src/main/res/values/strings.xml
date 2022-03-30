@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TextTrader</string>
+
+    <string-array name="college_names">
+        <item>Cascadia College</item>
+        <item>The University College</item>
+        <item>Testing College</item>
+    </string-array>
 </resources>
