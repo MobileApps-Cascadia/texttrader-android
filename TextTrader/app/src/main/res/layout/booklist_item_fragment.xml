@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="150dp"
+    android:background="#374B71">
 
     <ImageView
         android:id="@+id/imageView"
@@ -13,7 +14,8 @@
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        />
 
     <TextView
         android:id="@+id/book_title"
@@ -22,6 +24,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="Book Title"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,6 +36,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="Edition Volume"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/book_title" />
 
@@ -43,6 +47,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="Author"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/edition_volume" />
 
@@ -53,6 +58,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="Book Status"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/author" />
 </androidx.constraintlayout.widget.ConstraintLayout>
