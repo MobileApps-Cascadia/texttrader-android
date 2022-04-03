@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C358CFFF">
+
+    <Button
+        android:id="@+id/post_a_book_btn"
+        android:layout_width="406dp"
+        android:layout_height="150dp"
+        android:backgroundTint="@color/white"
+        android:text="Post a Book"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/find_a_book_btn"
+        android:layout_width="406dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#374B71"
+        android:text="Find a Book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_a_book_btn" />
+
+    <Button
+        android:id="@+id/messenger_btn"
+        android:layout_width="406dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#A1BF76"
+        android:text="Messenger"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_a_book_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
