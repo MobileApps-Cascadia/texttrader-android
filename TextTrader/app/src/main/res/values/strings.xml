@@ -2,8 +2,10 @@
     <string name="app_name">TextTrader</string>
 
     <string-array name="college_names">
+        <item></item>
+        <item>Not in school</item>
         <item>Cascadia College</item>
-        <item>The University College</item>
+        <item>University of Washington Tacoma</item>
         <item>Testing College</item>
     </string-array>
 </resources>
