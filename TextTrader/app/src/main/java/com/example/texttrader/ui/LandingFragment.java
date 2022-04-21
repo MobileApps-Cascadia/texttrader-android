@@ -15,14 +15,18 @@ import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
 
 public class LandingFragment extends Fragment {
+
+    private Button signInButton;
+    private Button createAccountButton;
+
     @Override
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.landing_fragment, container, false);
 
-        Button signInButton = view.findViewById(R.id.signin_btn);
-        Button createAccountButton = view.findViewById(R.id.create_account_btn);
+        signInButton = view.findViewById(R.id.signin_btn);
+        createAccountButton = view.findViewById(R.id.create_account_btn);
 
         Toast.makeText(getActivity(), "Welcome!", Toast.LENGTH_SHORT).show();
 

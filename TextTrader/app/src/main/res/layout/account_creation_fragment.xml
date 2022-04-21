@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/account_creation_title" />
 
     <EditText
-        android:id="@+id/users_first_name"
+        android:id="@+id/create_users_first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/create_username" />
 
     <EditText
-        android:id="@+id/users_last_name"
+        android:id="@+id/create_users_last_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -55,7 +55,7 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/users_first_name" />
+        app:layout_constraintTop_toBottomOf="@+id/create_users_first_name" />
 
     <EditText
         android:id="@+id/create_password"
@@ -68,7 +68,7 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/users_last_name" />
+        app:layout_constraintTop_toBottomOf="@+id/create_users_last_name" />
 
     <EditText
         android:id="@+id/confirm_create_password"
