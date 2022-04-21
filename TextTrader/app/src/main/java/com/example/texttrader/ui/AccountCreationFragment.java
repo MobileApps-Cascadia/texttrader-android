@@ -58,7 +58,7 @@ public class AccountCreationFragment extends Fragment implements AdapterView.OnI
                         "\nSchool: " + test
                 );
                 Toast.makeText(getActivity(), testString, Toast.LENGTH_LONG).show();
-                //((NavigationHost) getActivity()).navigateTo(new LogInFragment(), false);
+                ((NavigationHost) getActivity()).navigateTo(new LogInFragment(), false);
             }
         });
 
