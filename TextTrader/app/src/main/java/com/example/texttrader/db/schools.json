@@ -1,0 +1,20 @@
+{
+	"schools":[
+		{
+			"School_ID":"034835",
+			"School_Name":"Cascadia College",
+			"City":"Bothell",
+			"State":"Washington",
+			"Zip":"98011",
+			"Address":"18345 Campus Way NE"
+		},
+		{
+			"School_ID":"003798",
+			"School_Name":"University of Washington",
+			"City":"Seattle",
+			"State":"Washington",
+			"Zip":"98195",
+			"Address":"1400 NE Campus Parkway"
+		}
+	]
+}
