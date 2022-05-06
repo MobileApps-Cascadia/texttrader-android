@@ -1,0 +1,25 @@
+{
+	"users":[
+		{
+			"User_ID":"1000000",
+			"School_ID":"034835",
+			"Username":"Usernumber1",
+			"Password":"Password",
+			"Email":"Usernumber1@gamil.com"
+		},
+		{
+			"User_ID":"1000001",
+			"School_ID":"034835",
+			"Username":"UsernumberTwo",
+			"Password":"Password",
+			"Email":"UsernumberTwo@gmail.com"
+		},
+		{
+			"User_ID":"1000002",
+			"School_ID":"003798",
+			"Username":"UserThr33",
+			"Password":"Password",
+			"Email":"UserThr33@gmail.com"
+		}
+	]
+}
