@@ -24,7 +24,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="Book Title"
-        android:textColor="@color/white"
+        android:textColor="@color/Light_shadow"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/book_image"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,7 +36,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="Edition Volume"
-        android:textColor="@color/white"
+        android:textColor="@color/Light_shadow"
         app:layout_constraintStart_toEndOf="@+id/book_image"
         app:layout_constraintTop_toBottomOf="@+id/book_title" />
 
@@ -47,7 +47,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="Author"
-        android:textColor="@color/white"
+        android:textColor="@color/Light_shadow"
         app:layout_constraintStart_toEndOf="@+id/book_image"
         app:layout_constraintTop_toBottomOf="@+id/edition_volume" />
 
@@ -58,7 +58,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="Book Status"
-        android:textColor="@color/white"
+        android:textColor="@color/Light_shadow"
         app:layout_constraintStart_toEndOf="@+id/book_image"
         app:layout_constraintTop_toBottomOf="@+id/author" />
 </androidx.constraintlayout.widget.ConstraintLayout>
