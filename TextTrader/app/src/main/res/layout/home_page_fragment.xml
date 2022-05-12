@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C358CFFF">
+    android:background="@drawable/white_background">
 
     <Button
         android:id="@+id/post_a_book_btn"
         android:layout_width="406dp"
         android:layout_height="150dp"
-        android:backgroundTint="@color/white"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Home_1"
         android:text="Post a Book"
         android:textColor="#3F51B5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,7 +22,8 @@
         android:id="@+id/find_a_book_btn"
         android:layout_width="406dp"
         android:layout_height="150dp"
-        android:backgroundTint="#374B71"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Home_2"
         android:text="Find a Book"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +33,8 @@
         android:id="@+id/messenger_btn"
         android:layout_width="406dp"
         android:layout_height="150dp"
-        android:backgroundTint="#A1BF76"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Home_3"
         android:text="Messenger"
         android:textColor="#3F51B5"
         app:layout_constraintEnd_toEndOf="parent"
