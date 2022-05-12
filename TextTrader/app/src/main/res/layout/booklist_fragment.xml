@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#374B71">
+    android:background="@color/Home_2">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/booklist_fragment"
@@ -23,6 +23,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:hint="Search"
+        android:textColorHint="@color/Light_shadow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
-        android:backgroundTint="#3F51B5"
+        android:backgroundTint="@color/Home_buttons"
         android:text="Filter"
         app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"

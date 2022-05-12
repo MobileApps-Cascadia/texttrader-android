@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">TextTrader</string>
+    <string name="landing_logo_description">Landing Logo</string>
+    <string name="create_account_btn_text">Sign up</string>
+    <string name="signin_btn_text">Sign In</string>
 
     <string-array name="college_names">
-        <item></item>
+        <item> </item>
         <item>Not in school</item>
         <item>Cascadia College</item>
         <item>University of Washington Tacoma</item>

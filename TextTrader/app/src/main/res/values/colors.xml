@@ -7,4 +7,20 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="Dark_shadow">#CDCCC8</color>
+    <color name="Home_1">#FDFAF3</color>
+    <color name="Home_2">#364655</color>
+    <color name="Home_3">#B8C5B6</color>
+    <color name="Home_buttons">#6E787C</color>
+    <color name="Home_font_color">#455259</color>
+    <color name="Light_shadow">#FDFAF3</color>
+    <color name="Login_button">#FF685C</color>
+    <color name="Login_color_1">#212D33</color>
+    <color name="Login_color_2">#303D44</color>
+    <color name="Login_color_3">#38454C</color>
+    <color name="Login_color_4">#455259</color>
+    <color name="Login_color_5">#536066</color>
+    <color name="Login_color_6">#616C72</color>
+    <color name="Login_color_7">#6E787C</color>
 </resources>
