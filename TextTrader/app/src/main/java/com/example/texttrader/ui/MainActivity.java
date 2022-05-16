@@ -9,12 +9,12 @@ import android.os.Bundle;
 import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
 
-public class LoginActivity extends AppCompatActivity implements NavigationHost {
+public class MainActivity extends AppCompatActivity implements NavigationHost {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_activity);
+        setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
             getSupportFragmentManager()

@@ -8,9 +8,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/booklist_fragment"
-        android:layout_width="413dp"
-        android:layout_height="662dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +22,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:hint="Search"
-        android:textColorHint="@color/Light_shadow"
+        android:textColorHint="@color/Font_Color_1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,6 +33,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:backgroundTint="@color/Home_buttons"
+        android:textColor="@color/Font_Color_1"
         android:text="Filter"
         app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"

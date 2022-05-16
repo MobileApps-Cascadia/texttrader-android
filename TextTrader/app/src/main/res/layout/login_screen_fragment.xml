@@ -14,7 +14,7 @@
         android:layout_marginTop="150dp"
         android:text="Welcome!"
         android:textAlignment="center"
-        android:textColor="@color/Light_shadow"
+        android:textColor="@color/Font_Color_1"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,27 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Please sign in"
-        android:textColor="@color/Light_shadow"
+        android:textColor="@color/Font_Color_1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/login_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:hint="password"
-        android:textColorHint="@color/Light_shadow"
-        android:textColor="@color/Light_shadow"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_username" />
 
     <EditText
         android:id="@+id/login_username"
@@ -56,13 +41,28 @@
         android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="username"
-        android:textColorHint="@color/Light_shadow"
-        android:textColor="@color/Light_shadow"
+        android:textColorHint="@color/Font_Color_1"
+        android:textColor="@color/Font_Color_1"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="password"
+        android:textColorHint="@color/Font_Color_1"
+        android:textColor="@color/Font_Color_1"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_username" />
 
     <Button
         android:id="@+id/login_btn"
@@ -72,6 +72,7 @@
         android:width="200dp"
         android:backgroundTint="@color/Login_button"
         android:text="LOGIN"
+        android:textColor="@color/Font_Color_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_password"

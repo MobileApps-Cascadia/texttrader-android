@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/post_a_book_btn"
-        android:layout_width="406dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/Home_1"
@@ -20,18 +20,19 @@
 
     <Button
         android:id="@+id/find_a_book_btn"
-        android:layout_width="406dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/Home_2"
         android:text="Find a Book"
+        android:textColor="@color/Font_Color_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/post_a_book_btn" />
 
     <Button
         android:id="@+id/messenger_btn"
-        android:layout_width="406dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/Home_3"

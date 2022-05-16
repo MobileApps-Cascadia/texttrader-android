@@ -9,11 +9,18 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
+import com.example.texttrader.db.MockBookData;
 
 public class FindaBookFragment extends Fragment {
+
+    private RecyclerView recyclerView;
 
     @Override
     public View onCreateView(
@@ -22,6 +29,19 @@ public class FindaBookFragment extends Fragment {
 
         Toast.makeText(getActivity(), "A list of books should pop up!!", Toast.LENGTH_SHORT).show();
 
+        recyclerView = view.findViewById(R.id.booklist_fragment);
+
+        MockBookData.setBooksInfo();
+        setAdapter();
+        recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
         return view;
+    }
+
+    private void setAdapter() {
+        BookListRecyclerAdapter adapter = new BookListRecyclerAdapter(MockBookData.getBookInfo());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(adapter);
     }
 }
