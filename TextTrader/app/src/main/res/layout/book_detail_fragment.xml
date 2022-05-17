@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Book Title"
-        android:textColor="@color/Light_shadow"
+        android:textColor="@color/Font_Color_1"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:text="Edition"
-        android:textColor="@color/Light_shadow"
+        android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detail_author" />
 
@@ -46,7 +46,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:text="ISBN-13"
-        android:textColor="@color/Light_shadow"
+        android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detail_edition" />
 
@@ -57,7 +57,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:text="Format"
-        android:textColor="@color/Light_shadow"
+        android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detail_isbn_13" />
 
@@ -68,7 +68,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:text="Book Status"
-        android:textColor="@color/Light_shadow"
+        android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detail_format" />
 
@@ -79,7 +79,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="60dp"
         android:text="Author"
-        android:textColor="@color/Light_shadow"
+        android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detail_book_title" />
 
@@ -89,6 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/Home_buttons"
+        android:textColor="@color/Font_Color_1"
         android:text="Send Meassage"
         app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
