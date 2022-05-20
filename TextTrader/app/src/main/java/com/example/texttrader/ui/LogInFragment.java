@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
+import com.example.texttrader.db.MockUserData;
 
 public class LogInFragment extends Fragment {
 
@@ -33,10 +34,13 @@ public class LogInFragment extends Fragment {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (loginUsername.getText().toString().equals("admin") && loginPassword.getText().toString().equals("admin")) {
+
+                boolean canLogIn;
+                //if (loginUsername.getText().toString().equals("admin") && loginPassword.getText().toString().equals("admin")) {}
+                if(MockUserData.isUsernameAndPasswordCorrect (loginUsername.getText().toString(), loginPassword.getText().toString())) {
                     Toast.makeText(getActivity(), "Login successful, this should go to another screen", Toast.LENGTH_LONG).show();
                     ((NavigationHost) getActivity()).navigateTo(new HomePageFragment(), false);
-                } else {
+                }else {
                     Toast.makeText(getActivity(), "Login failed. Please try again!", Toast.LENGTH_LONG).show();
                 }
             }

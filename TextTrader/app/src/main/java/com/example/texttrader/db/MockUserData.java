@@ -1,5 +1,7 @@
 package com.example.texttrader.db;
 
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class MockUserData {
@@ -16,8 +18,9 @@ public class MockUserData {
 
         if (userStatus != -1) {
             for (int i = 0; i < getUserInfo().size(); i++) {
-
-                if (getUserInfo().get(i).equals(username)) {
+                System.out.println("In the loop");
+                if (getUserInfo().get(i).getUsername().equals(username)) {
+                    System.out.println("In the IFFY");
                     return getUserInfo().get(i);
                 }
             }
@@ -38,10 +41,11 @@ public class MockUserData {
 
         for (int i = 0; i < getUserInfo().size(); i++) {
 
-            if (getUserInfo().get(i).equals(username)) {
+            if (getUserInfo().get(i).getUsername().equals(username)) {
                 return i;
             }
         }
+        System.out.println("Did not find user, return fail");
         return -1;
     }
 

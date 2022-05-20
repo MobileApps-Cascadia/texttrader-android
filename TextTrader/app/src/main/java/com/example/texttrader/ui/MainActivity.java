@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
+import com.example.texttrader.db.MockUserData;
 
 public class MainActivity extends AppCompatActivity implements NavigationHost {
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements NavigationHost {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MockUserData.setUsersInfo(); //This is to create two mock users
 
         if (savedInstanceState == null) {
             getSupportFragmentManager()
