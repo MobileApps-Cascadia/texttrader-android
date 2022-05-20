@@ -11,4 +11,9 @@
         <item>University of Washington Tacoma</item>
         <item>Testing College</item>
     </string-array>
+
+    <string-array name="trade_or_donate">
+        <item>Trade</item>
+        <item>Donate</item>
+    </string-array>
 </resources>

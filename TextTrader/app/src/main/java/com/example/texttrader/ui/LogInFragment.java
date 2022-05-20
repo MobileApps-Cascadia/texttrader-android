@@ -36,12 +36,10 @@ public class LogInFragment extends Fragment {
             public void onClick(View view) {
 
                 boolean canLogIn;
-                //if (loginUsername.getText().toString().equals("admin") && loginPassword.getText().toString().equals("admin")) {}
                 if(MockUserData.isUsernameAndPasswordCorrect (loginUsername.getText().toString(), loginPassword.getText().toString())) {
-                    Toast.makeText(getActivity(), "Login successful, this should go to another screen", Toast.LENGTH_LONG).show();
                     ((NavigationHost) getActivity()).navigateTo(new HomePageFragment(), false);
                 }else {
-                    Toast.makeText(getActivity(), "Login failed. Please try again!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Login failed, username or password is incorrect. Please try again!", Toast.LENGTH_LONG).show();
                 }
             }
         });
