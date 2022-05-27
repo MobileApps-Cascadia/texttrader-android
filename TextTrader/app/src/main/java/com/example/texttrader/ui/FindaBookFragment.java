@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
 import com.example.texttrader.db.MockBookData;
+import com.example.texttrader.db.MockUserData;
 
 public class FindaBookFragment extends Fragment {
 
@@ -31,7 +32,6 @@ public class FindaBookFragment extends Fragment {
 
         recyclerView = view.findViewById(R.id.booklist_fragment);
 
-        MockBookData.setBooksInfo();
         setAdapter();
         recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
         return view;
