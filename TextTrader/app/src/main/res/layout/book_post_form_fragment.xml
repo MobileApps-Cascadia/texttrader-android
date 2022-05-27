@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Book Post Form"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textColor="@color/Font_Color_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +21,9 @@
     <EditText
         android:id="@+id/book_post_title"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginTop="30dp"
-        android:background="@color/white"
+        android:background="@drawable/book_post_edittext_background"
         android:hint="Title"
         android:textColorHint="@color/Font_Color_2"
         android:textColor="@color/Font_Color_2"
@@ -36,9 +36,9 @@
     <EditText
         android:id="@+id/book_post_author"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginTop="30dp"
-        android:background="@color/white"
+        android:background="@drawable/book_post_edittext_background"
         android:hint="Author"
         android:textColorHint="@color/Font_Color_2"
         android:textColor="@color/Font_Color_2"
@@ -51,9 +51,9 @@
     <EditText
         android:id="@+id/book_post_edition"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginTop="30dp"
-        android:background="@color/white"
+        android:background="@drawable/book_post_edittext_background"
         android:hint="Edition"
         android:textColorHint="@color/Font_Color_2"
         android:textColor="@color/Font_Color_2"
@@ -66,9 +66,9 @@
     <EditText
         android:id="@+id/book_post_isbn"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginTop="30dp"
-        android:background="@color/white"
+        android:background="@drawable/book_post_edittext_background"
         android:hint="ISBN"
         android:textColorHint="@color/Font_Color_2"
         android:textColor="@color/Font_Color_2"
@@ -81,11 +81,12 @@
     <Spinner
         android:id="@+id/book_post_spinner"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/book_post_isbn" />
+        app:layout_constraintTop_toBottomOf="@+id/book_post_isbn"
+        android:background="@drawable/spinner_background"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -94,7 +95,7 @@
         android:layout_marginTop="30dp"
         android:text="Submit"
         android:textColor="@color/Font_Color_2"
-        android:backgroundTint="@color/Light_shadow"
+        android:backgroundTint="@color/white"
         app:cornerRadius="10dp"
         app:strokeColor="@color/Font_Color_2"
         app:strokeWidth="1dp"
