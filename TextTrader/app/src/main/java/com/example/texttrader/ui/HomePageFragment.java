@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
+import com.example.texttrader.db.MockBookData;
 
 public class HomePageFragment extends Fragment {
 
@@ -27,6 +28,8 @@ public class HomePageFragment extends Fragment {
         postaBookButton = view.findViewById(R.id.post_a_book_btn);
         findaBookButton = view.findViewById(R.id.find_a_book_btn);
         messengerButton = view.findViewById(R.id.messenger_btn);
+
+        MockBookData.setBooksInfo(); //This is to create mock book data
 
         postaBookButton.setOnClickListener(new View.OnClickListener() {
             @Override

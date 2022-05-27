@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
+import com.example.texttrader.db.MockUserData;
 
 public class LandingFragment extends Fragment {
 
@@ -27,6 +28,8 @@ public class LandingFragment extends Fragment {
 
         signInButton = view.findViewById(R.id.signin_btn);
         createAccountButton = view.findViewById(R.id.create_account_btn);
+
+        MockUserData.setUsersInfo(); //This is to create two mock users
 
         Toast.makeText(getActivity(), "Welcome!", Toast.LENGTH_SHORT).show();
 
