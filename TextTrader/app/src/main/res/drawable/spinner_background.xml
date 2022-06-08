@@ -19,11 +19,11 @@
                     android:color="@color/black"/>
             </shape>
         </item>
-        <!--<item >
+        <item >
             <bitmap android:gravity="bottom|right"
-                android:src="@drawable/no_image"
-                android:width="24dp"
-                android:height="24dp"/>
-        </item>-->
+                android:src="@drawable/dropdown_arrow"
+                android:width="35dp"
+                android:height="35dp"/>
+        </item>
     </layer-list></item>
 </selector>
