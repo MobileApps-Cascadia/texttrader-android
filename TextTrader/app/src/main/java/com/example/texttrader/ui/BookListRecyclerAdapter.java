@@ -16,27 +16,41 @@ import java.util.ArrayList;
 
 public class BookListRecyclerAdapter extends RecyclerView.Adapter<BookListRecyclerAdapter.MyViewHolder> {
 
+    private final RecyclerViewInterface recyclerViewInterface;
+
     private ArrayList<Book> booksList;
 
-    public BookListRecyclerAdapter(ArrayList<Book> booksList){
+    public BookListRecyclerAdapter(ArrayList<Book> booksList, RecyclerViewInterface recyclerViewInterface){
         this.booksList = booksList;
+        this.recyclerViewInterface = recyclerViewInterface;
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         private ImageView bookImg;
-        private TextView titleTxt;
-        private TextView editionTxt;
-        private TextView authorTxt;
-        private TextView bookStatusTxt;
+        private TextView titleTxt, editionTxt, authorTxt, bookStatusTxt;
 
-        public MyViewHolder(final View view){
+        public MyViewHolder(final View view, RecyclerViewInterface recyclerViewInterface){
             super(view);
+
             bookImg = view.findViewById(R.id.book_image);
             titleTxt = view.findViewById(R.id.book_title);
             editionTxt = view.findViewById(R.id.edition_volume);
             authorTxt = view.findViewById(R.id.author);
             bookStatusTxt = view.findViewById(R.id.book_status);
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (recyclerViewInterface != null) {
+                        int pos = getAdapterPosition();
+
+                        if (pos != RecyclerView.NO_POSITION) {
+                            recyclerViewInterface.onItemClick(pos);
+                        }
+                    }
+                }
+            });
         }
     }
 
@@ -44,7 +58,7 @@ public class BookListRecyclerAdapter extends RecyclerView.Adapter<BookListRecycl
     @Override
     public BookListRecyclerAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.booklist_item, parent, false);
-        return new MyViewHolder(itemView);
+        return new MyViewHolder(itemView, recyclerViewInterface);
     }
 
     @Override

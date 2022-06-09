@@ -19,9 +19,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/bookImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
         android:layout_marginTop="10dp"
         android:text="Edition"
         android:textColor="@color/Font_Color_1"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/bookImageView"
         app:layout_constraintTop_toBottomOf="@+id/detail_author" />
 
     <TextView
@@ -47,7 +47,7 @@
         android:layout_marginTop="10dp"
         android:text="ISBN-13"
         android:textColor="@color/Font_Color_1"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/bookImageView"
         app:layout_constraintTop_toBottomOf="@+id/detail_edition" />
 
     <TextView
@@ -58,7 +58,7 @@
         android:layout_marginTop="10dp"
         android:text="Format"
         android:textColor="@color/Font_Color_1"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/bookImageView"
         app:layout_constraintTop_toBottomOf="@+id/detail_isbn_13" />
 
     <TextView
@@ -69,7 +69,7 @@
         android:layout_marginTop="10dp"
         android:text="Book Status"
         android:textColor="@color/Font_Color_1"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/bookImageView"
         app:layout_constraintTop_toBottomOf="@+id/detail_format" />
 
     <TextView
@@ -80,7 +80,7 @@
         android:layout_marginTop="60dp"
         android:text="Author"
         android:textColor="@color/Font_Color_1"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/bookImageView"
         app:layout_constraintTop_toBottomOf="@+id/detail_book_title" />
 
     <Button
@@ -89,10 +89,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/Home_buttons"
-        android:textColor="@color/Font_Color_1"
         android:text="Send Meassage"
+        android:textColor="@color/Font_Color_1"
         app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/detail_book_status" />
 </androidx.constraintlayout.widget.ConstraintLayout>

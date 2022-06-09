@@ -19,7 +19,7 @@ import com.example.texttrader.R;
 import com.example.texttrader.db.MockBookData;
 import com.example.texttrader.db.MockUserData;
 
-public class FindaBookFragment extends Fragment {
+public class FindaBookFragment extends Fragment implements RecyclerViewInterface {
 
     private RecyclerView recyclerView;
 
@@ -38,10 +38,15 @@ public class FindaBookFragment extends Fragment {
     }
 
     private void setAdapter() {
-        BookListRecyclerAdapter adapter = new BookListRecyclerAdapter(MockBookData.getBookInfo());
+        BookListRecyclerAdapter adapter = new BookListRecyclerAdapter(MockBookData.getBookInfo(), this);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        ((NavigationHost) getActivity()).navigateTo(new BookDetailFragment(), true);
     }
 }
