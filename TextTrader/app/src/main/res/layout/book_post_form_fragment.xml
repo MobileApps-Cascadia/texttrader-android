@@ -89,18 +89,19 @@
         android:background="@drawable/spinner_background"/>
 
     <Button
+        android:id="@+id/book_post_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="200dp"
         android:layout_marginTop="30dp"
+        android:width="200dp"
+        android:backgroundTint="@color/Login_button"
         android:text="Submit"
         android:textColor="@color/Font_Color_2"
-        android:backgroundTint="@color/Login_button"
         app:cornerRadius="10dp"
-        app:strokeColor="@color/Font_Color_2"
-        app:strokeWidth="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/book_post_spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/book_post_spinner"
+        app:strokeColor="@color/Font_Color_2"
+        app:strokeWidth="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

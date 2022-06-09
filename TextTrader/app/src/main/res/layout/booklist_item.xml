@@ -32,10 +32,10 @@
 
     <TextView
         android:id="@+id/edition_volume_text"
-        android:layout_width="70dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="Edition:"
         android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/book_image"
@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="Edition Volume"
         android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/edition_volume_text"
@@ -54,10 +54,10 @@
 
     <TextView
         android:id="@+id/author_text"
-        android:layout_width="70dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Author:"
         android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/book_image"
@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Author"
         android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/author_text"
@@ -76,11 +76,11 @@
 
     <TextView
         android:id="@+id/book_status_text"
-        android:layout_width="70dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:text="Book Stat:"
+        android:layout_marginTop="5dp"
+        android:text="Available for:"
         android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/book_image"
         app:layout_constraintTop_toBottomOf="@+id/author_text" />
@@ -90,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Book Stat"
         android:textColor="@color/Font_Color_1"
         app:layout_constraintStart_toEndOf="@+id/book_status_text"
