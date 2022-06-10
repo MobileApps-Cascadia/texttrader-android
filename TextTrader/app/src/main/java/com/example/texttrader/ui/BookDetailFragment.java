@@ -41,7 +41,7 @@ public class BookDetailFragment extends Fragment {
 
         bookDetailTitle.setText("This is title");
         bookDetailImage.setImageResource(R.drawable.no_image);
-        bookDetailAuthor.setText("This is Nmae");
+        bookDetailAuthor.setText("This is Name");
         bookDetailEdition.setText("This is 13th");
         bookDetailISBN13.setText("1234567890987");
         bookDetailFormat.setText("Paperback");
