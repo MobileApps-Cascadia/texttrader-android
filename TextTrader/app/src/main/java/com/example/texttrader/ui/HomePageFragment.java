@@ -29,7 +29,10 @@ public class HomePageFragment extends Fragment {
         findaBookButton = view.findViewById(R.id.find_a_book_btn);
         messengerButton = view.findViewById(R.id.messenger_btn);
 
-        MockBookData.setBooksInfo(); //This is to create mock book data
+        if (MockBookData.getBookInfo().size() == 0) {
+            MockBookData.setBooksInfo(); //This is to create mock book data
+        }
+
 
         postaBookButton.setOnClickListener(new View.OnClickListener() {
             @Override

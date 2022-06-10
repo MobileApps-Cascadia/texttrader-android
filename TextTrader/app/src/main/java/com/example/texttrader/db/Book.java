@@ -1,5 +1,7 @@
 package com.example.texttrader.db;
 
+import com.example.texttrader.R;
+
 public class Book {
     private Integer BookImage;
     private String BookTitle;
@@ -9,6 +11,14 @@ public class Book {
 
     public Book(Integer bookimage, String booktitle, String bookedition, String authorname, String bookstatus) {
         setBookImage(bookimage);
+        setBookTitle(booktitle);
+        setBookEdition(bookedition);
+        setAuthorName(authorname);
+        setBookStatus(bookstatus);
+    }
+
+    public Book(String booktitle, String bookedition, String authorname, String bookstatus) {
+        setBookImage(R.drawable.no_image);
         setBookTitle(booktitle);
         setBookEdition(bookedition);
         setAuthorName(authorname);
