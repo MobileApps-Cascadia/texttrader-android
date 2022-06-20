@@ -50,7 +50,7 @@ public class PostaBookFragment extends Fragment implements AdapterView.OnItemSel
             @Override
             public void onClick(View view) {
 
-                    MockBookData.addNewBook(bookPostTitle.getText().toString(), bookPostAuthor.getText().toString(), bookPostEdition.getText().toString(), bookPostISBN.getText().toString(), sselectedSpinnerText);
+                    MockBookData.addNewBook(bookPostTitle.getText().toString(), bookPostEdition.getText().toString(), bookPostAuthor.getText().toString(), bookPostISBN.getText().toString(), "Paperback", sselectedSpinnerText);
                     Toast.makeText(getActivity(), "Book Added", Toast.LENGTH_LONG).show();
                     ((NavigationHost) getActivity()).navigateTo(new HomePageFragment(), false);
             }

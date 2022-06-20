@@ -8,9 +8,12 @@ import android.os.Bundle;
 
 import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
+import com.example.texttrader.db.Book;
 import com.example.texttrader.db.MockUserData;
 
 public class MainActivity extends AppCompatActivity implements NavigationHost {
+
+    static Book tempBook = new Book("TEST","1st","Some Author","1234567890123","Paperback", "Trade");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

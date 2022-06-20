@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,7 +19,7 @@ public class BookListRecyclerAdapter extends RecyclerView.Adapter<BookListRecycl
 
     private final RecyclerViewInterface recyclerViewInterface;
 
-    private ArrayList<Book> booksList;
+    private static ArrayList<Book> booksList;
 
     public BookListRecyclerAdapter(ArrayList<Book> booksList, RecyclerViewInterface recyclerViewInterface){
         this.booksList = booksList;
@@ -42,9 +43,10 @@ public class BookListRecyclerAdapter extends RecyclerView.Adapter<BookListRecycl
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+
                     if (recyclerViewInterface != null) {
                         int pos = getAdapterPosition();
-
+                        MainActivity.tempBook = booksList.get(pos);
                         if (pos != RecyclerView.NO_POSITION) {
                             recyclerViewInterface.onItemClick(pos);
                         }
@@ -69,7 +71,7 @@ public class BookListRecyclerAdapter extends RecyclerView.Adapter<BookListRecycl
         holder.titleTxt.setText(title);
         String edition = booksList.get(position).getBookEdition();
         holder.editionTxt.setText(edition);
-        String author = booksList.get(position).getAuthorName();
+        String author = booksList.get(position).getBookAuthorName();
         holder.authorTxt.setText(author);
         String status = booksList.get(position).getBookStatus();
         holder.bookStatusTxt.setText(status);
