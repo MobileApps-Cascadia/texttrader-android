@@ -11,9 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.texttrader.NavigationHost;
 import com.example.texttrader.R;
-import com.example.texttrader.db.MockUserData;
 
 public class BookDetailFragment extends Fragment {
 
@@ -39,13 +37,13 @@ public class BookDetailFragment extends Fragment {
         bookDetailStatus = view.findViewById(R.id.detail_book_status);
         bookDetailMessageButton = view.findViewById(R.id.message_btn);
 
-        bookDetailTitle.setText("This is title");
-        bookDetailImage.setImageResource(R.drawable.no_image);
-        bookDetailAuthor.setText("This is Name");
-        bookDetailEdition.setText("This is 13th");
-        bookDetailISBN13.setText("1234567890987");
-        bookDetailFormat.setText("Paperback");
-        bookDetailStatus.setText("Trade");
+        bookDetailTitle.setText(MainActivity.tempBook.getBookTitle());
+        bookDetailImage.setImageResource(MainActivity.tempBook.getBookImage());
+        bookDetailAuthor.setText(MainActivity.tempBook.getBookAuthorName());
+        bookDetailEdition.setText(MainActivity.tempBook.getBookEdition());
+        bookDetailISBN13.setText(MainActivity.tempBook.getBookISBN13());
+        bookDetailFormat.setText(MainActivity.tempBook.getBookFormat());
+        bookDetailStatus.setText(MainActivity.tempBook.getBookStatus());
 
         return view;
     };
